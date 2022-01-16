@@ -13,6 +13,12 @@
 		0766C173279063DF007FD639 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0766C171279063DF007FD639 /* Main.storyboard */; };
 		0766C175279063E0007FD639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0766C174279063E0007FD639 /* Assets.xcassets */; };
 		0766C178279063E0007FD639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0766C176279063E0007FD639 /* LaunchScreen.storyboard */; };
+		0766C1802790695C007FD639 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766C17F2790695C007FD639 /* DesignableView.swift */; };
+		0766C1902790D132007FD639 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766C18F2790D131007FD639 /* MenuController.swift */; };
+		0766C1942790D69B007FD639 /* ControllProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766C1932790D69B007FD639 /* ControllProvider.swift */; };
+		07FFCBC227938E2E00151329 /* UserInputPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFCBC127938E2E00151329 /* UserInputPopup.swift */; };
+		07FFCBC42793905E00151329 /* UserPopup + tableviewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFCBC32793905E00151329 /* UserPopup + tableviewDelegate.swift */; };
+		E0E7B072BC3806F3FF0D56B3 /* Pods_MTMsTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC34E250E10329FA9AAD43D /* Pods_MTMsTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,14 @@
 		0766C174279063E0007FD639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0766C177279063E0007FD639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0766C179279063E0007FD639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0766C17F2790695C007FD639 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		0766C18F2790D131007FD639 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		0766C1932790D69B007FD639 /* ControllProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllProvider.swift; sourceTree = "<group>"; };
+		07FFCBC127938E2E00151329 /* UserInputPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputPopup.swift; sourceTree = "<group>"; };
+		07FFCBC32793905E00151329 /* UserPopup + tableviewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserPopup + tableviewDelegate.swift"; sourceTree = "<group>"; };
+		722DCBD8311A97A7E9675200 /* Pods-MTMsTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTMsTask.debug.xcconfig"; path = "Target Support Files/Pods-MTMsTask/Pods-MTMsTask.debug.xcconfig"; sourceTree = "<group>"; };
+		7EC34E250E10329FA9AAD43D /* Pods_MTMsTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTMsTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA617B78BF71FB60465A223F /* Pods-MTMsTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTMsTask.release.xcconfig"; path = "Target Support Files/Pods-MTMsTask/Pods-MTMsTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E7B072BC3806F3FF0D56B3 /* Pods_MTMsTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				0766C16A279063DF007FD639 /* MTMsTask */,
 				0766C169279063DF007FD639 /* Products */,
+				D3A402DBA8C034826AE18BCD /* Pods */,
+				9B848ACA0E32E61624C0F8A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,85 @@
 		0766C16A279063DF007FD639 /* MTMsTask */ = {
 			isa = PBXGroup;
 			children = (
-				0766C16B279063DF007FD639 /* AppDelegate.swift */,
-				0766C16D279063DF007FD639 /* SceneDelegate.swift */,
-				0766C16F279063DF007FD639 /* ViewController.swift */,
-				0766C171279063DF007FD639 /* Main.storyboard */,
-				0766C174279063E0007FD639 /* Assets.xcassets */,
-				0766C176279063E0007FD639 /* LaunchScreen.storyboard */,
+				077EC5B6279193EB006E41E8 /* Controller */,
 				0766C179279063E0007FD639 /* Info.plist */,
+				0766C18227906AD6007FD639 /* Resources */,
+				0766C18127906AC1007FD639 /* Extension */,
+				0766C171279063DF007FD639 /* Main.storyboard */,
 			);
 			path = MTMsTask;
+			sourceTree = "<group>";
+		};
+		0766C18127906AC1007FD639 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				07FFCBC62793A88200151329 /* Helper */,
+				0766C17F2790695C007FD639 /* DesignableView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0766C18227906AD6007FD639 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0766C16B279063DF007FD639 /* AppDelegate.swift */,
+				0766C16D279063DF007FD639 /* SceneDelegate.swift */,
+				0766C174279063E0007FD639 /* Assets.xcassets */,
+				0766C176279063E0007FD639 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		077EC5B6279193EB006E41E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				07FFCBC52793A84E00151329 /* SideMenu */,
+				077EC5BF2791C727006E41E8 /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		077EC5BF2791C727006E41E8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0766C16F279063DF007FD639 /* ViewController.swift */,
+				07FFCBC127938E2E00151329 /* UserInputPopup.swift */,
+				07FFCBC32793905E00151329 /* UserPopup + tableviewDelegate.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		07FFCBC52793A84E00151329 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0766C18F2790D131007FD639 /* MenuController.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		07FFCBC62793A88200151329 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0766C1932790D69B007FD639 /* ControllProvider.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9B848ACA0E32E61624C0F8A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EC34E250E10329FA9AAD43D /* Pods_MTMsTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3A402DBA8C034826AE18BCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				722DCBD8311A97A7E9675200 /* Pods-MTMsTask.debug.xcconfig */,
+				BA617B78BF71FB60465A223F /* Pods-MTMsTask.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0766C17C279063E0007FD639 /* Build configuration list for PBXNativeTarget "MTMsTask" */;
 			buildPhases = (
+				3C0D5FB148F90D05DE7E1287 /* [CP] Check Pods Manifest.lock */,
 				0766C164279063DF007FD639 /* Sources */,
 				0766C165279063DF007FD639 /* Frameworks */,
 				0766C166279063DF007FD639 /* Resources */,
+				731C10D3DE8DBD6F171C9D4B /* [CP] Copy Pods Resources */,
+				214794CF0831ED8AB9F08183 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +223,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		214794CF0831ED8AB9F08183 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MTMsTask/Pods-MTMsTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MTMsTask/Pods-MTMsTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MTMsTask/Pods-MTMsTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C0D5FB148F90D05DE7E1287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MTMsTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		731C10D3DE8DBD6F171C9D4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MTMsTask/Pods-MTMsTask-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MTMsTask/Pods-MTMsTask-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MTMsTask/Pods-MTMsTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0766C164279063DF007FD639 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FFCBC42793905E00151329 /* UserPopup + tableviewDelegate.swift in Sources */,
+				0766C1902790D132007FD639 /* MenuController.swift in Sources */,
+				0766C1802790695C007FD639 /* DesignableView.swift in Sources */,
 				0766C170279063DF007FD639 /* ViewController.swift in Sources */,
 				0766C16C279063DF007FD639 /* AppDelegate.swift in Sources */,
+				0766C1942790D69B007FD639 /* ControllProvider.swift in Sources */,
+				07FFCBC227938E2E00151329 /* UserInputPopup.swift in Sources */,
 				0766C16E279063DF007FD639 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +438,7 @@
 		};
 		0766C17D279063E0007FD639 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 722DCBD8311A97A7E9675200 /* Pods-MTMsTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +466,7 @@
 		};
 		0766C17E279063E0007FD639 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA617B78BF71FB60465A223F /* Pods-MTMsTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

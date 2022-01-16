@@ -1,0 +1,28 @@
+PODS:
+  - GoogleMaps (6.0.1):
+    - GoogleMaps/Maps (= 6.0.1)
+  - GoogleMaps/Base (6.0.1)
+  - GoogleMaps/Maps (6.0.1):
+    - GoogleMaps/Base
+  - GooglePlaces (6.0.0)
+  - SideMenu (6.5.0)
+
+DEPENDENCIES:
+  - GoogleMaps (= 6.0.1)
+  - GooglePlaces (= 6.0.0)
+  - SideMenu
+
+SPEC REPOS:
+  trunk:
+    - GoogleMaps
+    - GooglePlaces
+    - SideMenu
+
+SPEC CHECKSUMS:
+  GoogleMaps: c213fc2334b7374144cede914da779b99be0ab74
+  GooglePlaces: c97d96ae68594acb64035c9ca9f26fbfc1d23af1
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+
+PODFILE CHECKSUM: 3cabc4cc6ef835a2f146044ebf0d9f2abf6fbdf9
+
+COCOAPODS: 1.11.2
